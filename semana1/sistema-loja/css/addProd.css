@@ -4,56 +4,50 @@
   text-decoration: none;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.pag-inicial{
+
+.title{
   margin: 0px;
-  padding: 24px;
+  padding: 42px;
   background-color: rgb(101, 85, 240);
   color: white;
 }
 
-#saudacao {
-  font-size: 42px;
-  margin-bottom: 50px;
-}
-
-.form {
-  margin: 50px 50px 52px 620px;
-  font-weight: bold;
-}
-
-.formulario, li {
+form {
+  margin: 52px 480px 50px 480px;
+  padding: 24px;
+  border: 1px solid black;
   color: rgb(101, 85, 240);
-}
-
-.label {
-  display: block;
   font-size: 24px;
 }
 
-.input {
-  font-size: larger;
+.inputs {
+  font-size: large;
   margin: 15px;
   padding: 8px;
 }
 
-.opcoes {
-  margin-left: 450px;
+#buttons {
+  margin-top: 35px;
+  margin-bottom: 65px;
+  margin-left: 600px;
 }
 
-.elementos {
-  list-style: none;
-  display: inline;
-  margin: 15px; 
+.button {
+  color: rgb(101, 85, 240);
+  background-color: white;
+  padding: 8px;
+  border: 1px solid rgb(101, 85, 240);
+  margin-right: 8px;
 }
+
 a {
   color: rgb(101, 85, 240);
+  background-color: white;
 }
 
-li:hover, a:hover {
+button:hover, a:hover {
   color: white;
   background-color: rgb(101, 85, 240);
-  padding: 8px;
-  border-radius: 8px;
 }
 
 footer {

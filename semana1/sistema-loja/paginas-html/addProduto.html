@@ -3,33 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/addProd.css">
   <title>Produtos</title>
 </head>
 <body>
-  <h1>Adicionar Produtos</h1>
-  <p></p>
-  <form action="#">
-    <label for="file">Foto: </label>
-    <input type="file" placeholder="Foto do produto" name="file" id="file">
-    <button type="submit">Adicionar foto</button>
-    <br><br>
-    <label for="descricao">Descrição: </label>
-    <input type="text" placeholder="Descrição do produto" name="descricao" id="descricao">
-    <button>Adicionar descrição</button>
-    <br><br>
-    <label for="preco">Preço: </label>
-    <input type="text" placeholder="Preço do produto" name="preco" id="preco">
-    <button type="submit">Adicionar preço</button>
-    <br><br>
-    <label for="quantidade">Quantidade: </label>
-    <input type="text" placeholder="Quantidade disponível" name="quantidade" id="quantidade">
-    <button>Adicionar quantidade disponível</button>
-  </form>
+  <div class="title">
+    <h1>Adicionar Produtos</h1>
+  </div>
+  <div class="form">
+    <form action="#">
+      <label class="label" for="file">Foto: </label>
+      <input id="foto" class="inputs" type="file" placeholder="Foto do produto" name="file" id="file">
+      <br><br>
+      <label class="label" for="descricao">Descrição: </label>
+      <input class="inputs" type="text" placeholder="Descrição do produto" name="descricao" id="descricao">
+      <br><br>
+      <label class="label" for="preco">Preço: </label>
+      <input class="inputs" type="text" placeholder="Preço do produto" name="preco" id="preco">
+      <br><br>
+      <label class="label" for="quantidade">Quantidade: </label>
+      <input class="inputs" type="text" placeholder="Quantidade disponível" name="quantidade" id="quantidade">
+    </form>
+  </div>
   <br><br>
-  <button><a href="../index.html">Página Inicial</a></button>
-  <button type="submit">Adicionar Produto</button>
-  <button><a href="./controleEstoque.html">Ver Estoque</a></button>
+  <div id="buttons" class="opcoes">
+    <button class="button" type="submit"><a href="../index.html">Página Inicial</a></button>
+    <button class="button" type="submit">Adicionar Produto</button>
+    <button class="button" type="submit"><a href="./controleEstoque.html">Ver Estoque</a></button>
+  </div>
   <br><br><br>
   <footer>&copy; Todos os direitos reservados.</footer>
 </body>

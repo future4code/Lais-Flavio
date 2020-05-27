@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title{
+  margin: 0px;
+  padding: 42px;
+  background-color: rgb(101, 85, 240);
+  color: white;
+}
+
+.table {
+  margin-top: 52px;
+}
+
+table {
+  border-spacing: 64px;
+  margin-left: 350px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.buttons {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-left: 550px;
+}
+
+button {
+  color: rgb(101, 85, 240);
+  background-color: white;
+  padding: 8px;
+  border: 1px solid rgb(101, 85, 240);
+  margin: 8px;
+  border-radius: 8px;
+}
+
+a {
+  color: rgb(101, 85, 240);
+  background-color: white;
+}
+
+button:hover, a:hover {
+  color: white;
+  background-color: rgb(101, 85, 240);
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 98%;
+  text-align: center;
+  color: white;
+  background-color: rgb(101, 85, 240);
+  padding: 24px;
+}

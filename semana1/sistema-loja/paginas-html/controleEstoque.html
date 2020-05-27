@@ -3,46 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/contEstoque.css">
   <title>Controle de Estoque</title>
 </head>
 <body>
-  <h1>Controle de Estoque</h1>
-  <table>
-    <th>Foto</th>
-    <th>Descrição</th>
-    <th>Preço</th>
-    <th>Quantidade disponível</th>
-    <tr>
-      <td><img src="../img/fonedeOuvido.jpg" alt="fone de ouvido" height="100px" width="100px"></td>
-      <td>Ouça suas músicas preferidas</td>
-      <td>299,00</td>
-      <td>58</td>
-    </tr>
-    <tr>
-      <td><img src="../img/iphone.png" alt="iphone" height="100px" width="50px"></td>
-      <td>Este é o master Iphone que fala com você</td>
-      <td>3.999,89</td>
-      <td>102</td>
-    </tr>
-    <tr>
-      <td><img src="../img/relogio.jpg" alt="relogio inteligente" height="100px" width="80px"></td>
-      <td>O relógio inteligente que lê seus batimentos cardíacos</td>
-      <td>289,90</td>
-      <td>324</td>
-    </tr>
-    <tr>
-      <td><img src="../img/tvApple.jpg" alt="tv vários canais" height="100px" width="80px"></td>
-      <td>Veja canais premium exclusivos do prime videos</td>
-      <td>129,99</td>
-      <td>489</td>
-    </tr>
-  </table>
+  <div class="title">
+    <h1>Controle de Estoque</h1>
+  </div>
+  <div class="table">
+    <table class="table-element">
+      <th class="title-table">Foto</th>
+      <th class="title-table">Descrição</th>
+      <th class="title-table">Preço</th>
+      <th class="title-table">Quantidade disponível</th>
+      <tr>
+        <td class="elementos-table"><img src="../img/fonedeOuvido.jpg" alt="fone de ouvido" height="100px" width="90px"></td>
+        <td class="elementos-table">Ouça suas músicas preferidas</td>
+        <td class="elementos-table">299,00</td>
+        <td class="elementos-table">58</td>
+      </tr>
+      <tr>
+        <td class="elementos-table"><img src="../img/iphone.png" alt="iphone" height="100px" width="50px"></td>
+        <td class="elementos-table">Este é o master Iphone que fala com você</td>
+        <td class="elementos-table">3.999,89</td>
+        <td class="elementos-table">102</td>
+      </tr>
+      <tr>
+        <td class="elementos-table"><img src="../img/relogio.jpg" alt="relogio inteligente" height="100px" width="80px"></td>
+        <td class="elementos-table">O relógio inteligente que lê seus batimentos cardíacos</td>
+        <td class="elementos-table">289,90</td>
+        <td class="elementos-table">324</td>
+      </tr>
+      <tr>
+        <td class="elementos-table"><img src="../img/tvApple.jpg" alt="tv vários canais" height="100px" width="80px"></td>
+        <td class="elementos-table">Veja canais premium exclusivos do prime videos</td>
+        <td class="elementos-table">129,99</td>
+        <td class="elementos-table">489</td>
+      </tr>
+    </table>
+    <div class="buttons">
+      <button class="btn-elements" type="submit"><a href="../index.html">Página Inicial</a></button>
+      <button class="btn-elements" type="submit"><a href="addProduto.html">Adicionar Produto</a></button>
+      <button class="btn-elements" type="submit">Remover Produto</button>
+    </div>
+  </div>
   <br>
-  <button type="submit"><a href="../index.html">Página Inicial</a></button>
-  <button type="submit"><a href="addProduto.html">Adicionar Produto</a></button>
-  <button type="submit">Remover Produto</button>
-  <br>
+  <br><br>
   <footer>&copy; Todos os direitos reservados.</footer>
 </body> 
 </html>
