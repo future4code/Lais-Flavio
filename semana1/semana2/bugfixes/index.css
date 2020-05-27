@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
@@ -44,15 +45,21 @@ div img {
     border-radius: 5px;
     font-size: 20px;
     color: white;
+    position: absolute;
+    top: 180px;
+    left: 41.5%;
 }
 
 .botao-amarelo:hover {
     background-color: #c44f00;
+    
 }
 
 .container {
     height: 500px;
     text-align: center;
+    position: relative;
+    padding-top: 100px;
 }
 
 .icone {
@@ -69,6 +76,7 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+    
 }
 
 #container-de-descricao>ol {
@@ -85,7 +93,6 @@ div img {
     font-size: 60px;
 }
 
-
 /**
   *
   *  ESTILOS COMPRAR 
@@ -99,6 +106,12 @@ div:last-child {
 
 table {
     width: 60%;
+    position: absolute;
+    left: 400px;
+}
+
+.table {
+    position: relative;
 }
 
 td button {
@@ -114,6 +127,10 @@ td button {
     height: 100px;
 }
 
+.btn-back {
+    position: relative;
+}
+
 
 #back-button {
     background-color: white;
@@ -123,11 +140,41 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
-    
+    position: absolute;
+    top: 300px;
 }
 a {
     text-decoration: none;
 }
 #back-button:hover {
-    background-color: #635a3d
+    background-color: #635a3d;
+}
+
+img {
+    max-width: 32px;
+    max-width: 32px;
+    width: auto;
+    height: auto;
+}
+
+.icone {
+    background-color: white;
+    color: black;
+}
+
+button:hover {
+    opacity: 0.9;
+    filter: saturate(165%);
+}
+
+button:focus {
+    color: white;
+}
+
+input {
+    border: 2px solid;
+    border-bottom-color:rgb(122, 122, 122);
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
