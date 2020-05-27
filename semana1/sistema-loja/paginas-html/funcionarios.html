@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/func.css">
   <title>Funcionários</title>
 </head>
 <body>
-  <h1>Funcionários</h1>
-  <h2>Lista dos funcionários</h2>
-  <table>
+  <div class="title">
+    <h1>Lista de Funcionários</h1>
+  </div>
+  <table class="table">
     <tr>
       <th>Nome </th>
       <th>Data de Nascimento </th>
@@ -30,21 +32,23 @@
     </tr>
   </table>
   <br>
-  <h2>Adicionar Funcionário</h2>
-  <form action="#">
-    <label for="nome">Nome Completo: </label>
-    <input type="text">
+  <div class="adc-func">
+    <h2>Adicionar Funcionário</h2>
+    <form class="form" action="#">
+      <label for="nome">Nome Completo: </label>
+      <input type="text">
+      <br><br>
+      <label for="nascimento">Data de Nascimento: </label>
+      <input type="date">
+    </form>
+  </div>
+    <br>
+  <div class="btn">
+    <button class="button" type="submit">Adicionar funcionário</button>
+    <button class="button" type="submit"><a href="../index.html">Página Inicial</a></button>
+    <button class="button" type="submit">Remover Funcionário</button>
     <br><br>
-    <label for="nascimento">Data de Nascimento: </label>
-    <input type="date">
-  </form>
-  <br>
-  <button type="submit">Adicionar funcionário</button>
-  <br><br>
-  <button type="submit"><a href="../index.html">Página Inicial</a></button>
-  <br><br>
-  <button type="submit">Remover Funcionário</button>
-  <br><br>
+  </div>
   <footer>&copy; Todos os direitos reservados.</footer>
 </body>
 </html>

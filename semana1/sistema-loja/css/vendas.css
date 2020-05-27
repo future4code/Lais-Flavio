@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pag-inicial{
+  margin: 0px;
+  padding: 32px;
+  background-color: rgb(101, 85, 240);
+  color: white;
+}
+
+label, input {
+  display: block;
+}
+
+form, .buttons {
+  margin-top: 48px;
+  margin-left: 650px;
+}
+
+.buttons {
+  margin-top: 40px;
+  margin-left: 650px;
+  margin-bottom: 90px;
+}
+
+.btn {
+  color: rgb(101, 85, 240);
+  background-color: white;
+  padding: 12px;
+  border: 1px solid rgb(101, 85, 240);
+  margin: 8px;
+  border-radius: 8px;
+}
+
+label{
+  margin-bottom: 8px;
+  color: rgb(101, 85, 240);
+  font-size: 20px;
+}
+
+input {
+  font-size: large;
+  margin: 15px;
+  padding: 8px
+}
+
+a {
+  color: rgb(101, 85, 240);
+  background-color: white;
+}
+
+button:hover, a:hover {
+  color: white;
+  background-color: rgb(101, 85, 240);
+  border-radius: 8px;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 98%;
+  text-align: center;
+  color: white;
+  background-color: rgb(101, 85, 240);
+  padding: 24px;
+}
