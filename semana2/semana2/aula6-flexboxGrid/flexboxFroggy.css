@@ -1,151 +1,150 @@
-1 - justify-content: flex-end;
-2 - justify-content: center;
-3 - justify-content: space-around;
-4 - justify-content: space-between;
-5 - align-items: flex-end;
-6 - justify-content: center; align-items: center;
-7 - align-items: flex-end; justify-content: space-around;
-8 - flex-direction: row-reverse;
-9 - flex-direction: column;
-10 - flex-direction: row-reverse; justify-content: flex-end;
-11 - flex-direction: column; justify-content: flex-end;
-12 - flex-direction: column-reverse; justify-content: space-between;
-13 - flex-direction: row-reverse; justify-content: center; align-items: flex-end;
-14 - order: 3;
-15 - order: -1;
-16 - align-self: flex-end;
-17 - order: 2; align-self: flex-end;
-18 - flex-wrap: wrap;
-19 - flex-direction: column; flex-wrap: wrap;
-20 - flex-flow: column wrap;
-21 - align-content: flex-start;
-22 - align-content: flex-end;
-23 - flex-flow: column-reverse wrap; align-content: center;
-24 - flex-flow: column-reverse wrap-reverse; justify-content: center; align-content: space-between;
 
-grid
-
-1 - grid-column-start: 3;
-2 - grid-column-start: 5;
-3 - grid-column-end: 4;
-4 - grid-column-end: 2;
-5 - grid-column-end: 5;
-6 - grid-column-start: -3;
-7 - grid-column-end: span 2;
-8 - grid-column-end: span 5;
-9 - grid-column-start: span 3;
-10 - grid-column: 4/6;
-11 - grid-column: span 3/5;
-12 - grid-row-start: 3;
-
-13 - #garden {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+#pond {
+  display: flex;
+justify-content: flex-end;
 }
 
-#water {
-grid-row: 3/6;
+#pond {
+  display: flex;
+justify-content: center;
 }
 
-14 - #garden {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+#pond {
+  display: flex;
+justify-content: space-around;
 }
 
-#poison {
-grid-column: 2;
-grid-row: 5;
+#pond {
+  display: flex;
+justify-content: space-between;
 }
 
-15 - #garden {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+#pond {
+  display: flex;
+align-items: flex-end;
 }
 
-#water {
-grid-column: 2/6;
-grid-row: 1/6;
+#pond {
+  display: flex;
+justify-content: center;
+align-items: center;
 }
 
-16 - #garden {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+#pond {
+  display: flex;
+align-items: flex-end;
+justify-content: space-around;
 }
 
-#water {
-grid-area: 1/2/4/6;
+#pond {
+  display: flex;
+flex-direction: row-reverse;
 }
 
-17 - #garden {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+#pond {
+  display: flex;
+flex-direction: column;
 }
 
-#water-1 {
-  grid-area: 1 / 4 / 6 / 5;
+#pond {
+  display: flex;
+flex-direction: row-reverse;
+justify-content: flex-end;
 }
 
-#water-2 {
-grid-area: 2/3/5/6;
+#pond {
+  display: flex;
+flex-direction: column;
+justify-content: flex-end;
 }
 
-18 - #garden {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+#pond {
+  display: flex;
+flex-direction: column-reverse;
+justify-content: space-between;
 }
 
-.water {
-  order: 0;
+#pond {
+  display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+align-items: flex-end;
 }
 
-#poison {
+#pond {
+  display: flex;
+}
+
+.yellow {
 order: 3;
 }
 
-19 - #garden {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+#pond {
+  display: flex;
 }
 
-.water {
-  order: 0;
-}
-
-.poison {
+.red {
 order: -1;
 }
 
-20 - #garden {
-  display: grid;
-grid-template-columns: 50%
-  grid-template-rows: 20% 20% 20% 20% 20%;
+#pond {
+  display: flex;
+  align-items: flex-start;
 }
 
-#water {
-  grid-column: 1;
-  grid-row: 1;
+.yellow {
+align-self: flex-end;
 }
 
-21 - #garden {
-  display: grid;
-grid-template-columns: repeat(5, 12.5%);
-  grid-template-rows: 20% 20% 20% 20% 20%;
+#pond {
+  display: flex;
+  align-items: flex-start;
 }
 
-#water {
-  grid-column: 1;
-  grid-row: 1;
+.yellow {
+order: 2;
+align-self: flex-end;
 }
 
-22 - #garden {
-  display: grid;
-grid-template-columns: 100px 3em 40%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+#pond {
+  display: flex;
+flex-wrap: wrap;
+}
+
+#pond {
+  display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+#pond {
+  display: flex;
+flex-flow: column wrap;
+}
+
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+align-content: flex-start;
+}
+
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+align-content: flex-end;
+}
+
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+flex-flow: column-reverse wrap;
+align-content: center;
+}
+
+#pond {
+  display: flex;
+flex-flow: column-reverse wrap-reverse;
+justify-content: center;
+align-content: space-between;
+
 }
