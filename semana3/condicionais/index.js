@@ -184,7 +184,39 @@ A : https://docs.google.com/presentation/d/1vYSi9wCBGS8fiGXkU4Gfl5YgVCqJdRBK-5l4
 
 b:
 
+let vertebrado = true
+let pelugem = true
+let mamifero = "humano"
+let ave = true
+let terrestre = true
 
+let pergunta1 = prompt("Possui ossos formando esqueleto?")
+let pergunta2 = prompt("Possui pelos?")
+let pergunta3 = prompt("É mamífero?")
+let pergunta4 = prompt("pensa?")
+let pergunta6 = prompt("É terrestre?")
+let pergunta5 = prompt("Tem penas?")
+let pergunta7 = prompt("vive uma parte da vida na água?")
+
+
+
+if((pergunta1 === "sim") && 
+(pergunta2 === "sim") && 
+(pergunta3 === "sim") && 
+(pergunta4 === "sim")){
+  console.log("É um ser humano")
+} else if((pergunta1 === "sim") && (pergunta2 === "não") && (pergunta5 === "sim")) {
+  console.log("É uma ave")
+} else if((pergunta1 === "sim") && (pergunta2 === "sim") && (pergunta4 === "não")){
+  console.log("É um mamífero não humano")
+}else if((pergunta1 === "sim") 
+&& (pergunta2 === "não") 
+&& (pergunta3 === "não") 
+&& (pergunta6 === "sim") && (pergunta7 === "sim")) {
+  console.log("é anfíbio")
+}else {
+  console.log("É um réptil")
+}
 
 
 
@@ -192,8 +224,3 @@ b:
 
 */
 
-let animal = "vertebrado"
-let pelugem = true
-let mamifero = "humano"
-let ave = true
-let terrestre = true
