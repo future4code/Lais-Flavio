@@ -103,6 +103,21 @@ for(let item of arrayOriginal) {
 console.log(novaLista)
 
 
+d - 
+
+const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
+
+let novaLista = []
+
+// for(let i = 0; i <= arrayOriginal.length -1; i++) {
+// console.log(`O elemento do índex ${i} é ${arrayOriginal[i]}`)
+
+// }
+
+for(let i in arrayOriginal) {
+ console.log(`O elemento do índex ${i} é ${arrayOriginal[i]}`)  
+}
+
 */
 
 /*EXERCÍCIO 4
@@ -111,11 +126,4 @@ console.log(novaLista)
 
 */
 
-const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
 
-let novaLista = []
-
-for(let i = 0; i < arrayOriginal.lenght; i++) {
-  
-}
-console.log(`O elemento do index ${i}  é ${array[i]}`);
