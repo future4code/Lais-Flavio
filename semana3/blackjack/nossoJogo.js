@@ -22,34 +22,24 @@
    let carta3 = comprarCarta()
    let carta4 = comprarCarta()
 
+   let resultado1 = carta1.valor + carta2.valor //user
+   let resultado2 = carta3.valor + carta4.valor //pc
 
-   console.log(`Usuário - cartas: ${carta1.texto} ${carta2.texto}e - pontuação: ${carta1.valor + carta2.valor}`)
-   console.log(`Computador - cartas: ${carta3.texto} ${carta4.texto} - pontuação: ${carta3.valor + carta4.valor}`)
 
-   if (carta1.valor + carta2.valor === 21) {
+   console.log(`Usuário - cartas: ${carta1.texto} ${carta2.texto}e - pontuação: ${resultado1}`)
+   console.log(`Computador - cartas: ${carta3.texto} ${carta4.texto} - pontuação: ${resultado2}`)
+
+   if ((resultado1 === 21) || (resultado1 > resultado2)) {
       console.log("Você ganhou!")
-   }else if (carta3.valor + carta4.valor === 21) {
+   }else if ((resultado2 === 21) || (resultado1 < resultado2)) {
       console.log("O computador ganhou")
-   }else if ((carta1.valor + carta2.valor) === (carta3.valor + carta4.valor)) {
+   }else if ((resultado1) === (resultado2)) {
     console.log("Empate")
-   }else if ((carta1.valor + carta2.valor) > (carta3.valor + carta4.valor)) {    
-   console.log("Você ganhou")
-   }else if ((carta1.valor + carta2.valor) < (carta3.valor + carta4.valor)) {    
-   console.log("O computador ganhou")
+   
    }
  }
-//(carta3.valor + carta4.valor !== 21)
 
 
-//  else if((carta1.valor + carta2.valor < 21) && (carta3.valor + carta4.valor === 21) 
-//  && (carta1.valor + carta2.valor < 21) && (carta3.valor + carta4.valor >= 21) && 
-//     (carta1.valor + carta2.valor < 21))  {
-//     console.log("O computador ganhou")
-//  } else if((carta1.valor + carta2.valor >= 21) && (carta3.valor + carta4.valor < 21)) {
-//   console.log("Você ganhou")
-//  }else if((carta1.valor + carta2.valor < 21) && (carta3.valor + carta4.valor >= 21)) {    
-//     console.log("O computador ganhou")
-//  }
 
 
 
