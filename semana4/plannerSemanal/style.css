@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#045174;
+  padding: 25px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: orangered;
+  padding: 15px;
+  color: white;
+}
+/*
+div button {
+  font-size: 16px;
+  background-color: orangered;
+  border: 0px;
+  color: white;
+}
+*/
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #001F3D;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+input {
+  height: 36px;
+  width: 200px;
+  margin-right: 8px;
+}
+
+footer button {
+  height: 36px;
+  width: 130px;
+  background-color: orangered;
+  color: white;
+  border: 0px;
+  font-size: 16px;
+} 

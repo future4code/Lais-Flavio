@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Planner Pessoal</title>
+</head>
+<body>
+  <header>
+  <h1 id="header">Minha Semana</h1>
+  </header>
+  <div class="container">
+        <div class="diaDaSemana1">
+          <h2>Domingo</h2>
+       <ul id="domingo"></ul>
+        </div>
+        <div class="diaDaSemana2">
+          <h2>Segunda</h2>
+        <ul id="segunda"></ul>
+        </div>
+        <div class="diaDaSemana3">
+          <h2>Terça</h2>
+       <ul id="terca"></ul>
+
+        </div>
+        <div class="diaDaSemana4">
+          <h2>Quarta</h2>
+        </div>
+        <div class="diaDaSemana5">
+        <h2>Quinta</h2>
+        </div>
+        <div class="diaDaSemana6">
+          <h2>Sexta</h2>
+          </div>
+        <div class="diaDaSemana7">
+          <h2>Sábado</h2>
+          </div> 
+  </div>
+  <div class="container-boby">
+    <ul id="quarta"></ul>
+    <ul id="quinta"></ul>
+    <ul id="sexta"></ul>
+    <ul id="sabado"></ul>
+
+  </div>
+  <footer>
+  <form action="#">
+    <select name="selectDay" id="selectDay">
+    <option value="Domingo" id="dom">Domingo</option> 
+    <option value="Segunda" id="seg">Segunda</option>
+    <option value="Terça" id="ter">Terça</option>
+    <option value="Quarta" id="qua">Quarta</option>
+    <option value="Quinta" id="qui">Quinta</option>
+    <option value="Sexta" id="sex">Sexta</option>
+    <option value="Sabado" id="sab">Sábado</option>
+
+    </select>
+    <input type="text" id="input">
+    <button onclick="addTarefa()">Adicionar Tarefa</button>
+  </form>
+</footer>
+</body>
+</html>
