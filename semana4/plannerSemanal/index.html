@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-  <h1 id="header">Minha Semana</h1>
+  <h1 id="header-h2">Minha Semana</h1>
   <form action="#">
     <select name="selectDay" id="selectDay">
     <option value="Domingo" id="dom">Domingo</option> 
@@ -20,44 +20,75 @@
     <option value="Sexta" id="sex">Sexta</option>
     <option value="Sabado" id="sab">Sábado</option>
     </select>
-    <input type="text" id="input" >
-    <input type="button" onclick="addTarefa()" value="Adicionar" class="button">
+
+    <form action="#">
+      <select name="selectHora" id="selectHora">
+      <option value="1h" id="hr1">1h</option> 
+      <option value="2h" id="hr2">2h</option>
+      <option value="3h" id="hr3">3h</option>
+      <option value="4h" id="hr4">4h</option>
+      <option value="5h" id="hr5">5h</option>
+      <option value="6h" id="hr6">6h</option>
+      <option value="7h" id="hr7">7h</option>
+      <option value="8h" id="hr8">8h</option>
+      <option value="9h" id="hr9">9h</option>
+      <option value="10h" id="hr10">10h</option>
+      <option value="11h" id="hr11">11h</option>
+      <option value="12h" id="hr12">12h</option>
+      <option value="13h" id="hr13">13h</option>
+      <option value="14h" id="hr14">14h</option>
+      <option value="15h" id="hr15">15h</option>
+      <option value="16h" id="hr16">16h</option>
+      <option value="17h" id="hr17">17h</option>
+      <option value="18h" id="hr18">18h</option>
+      <option value="19h" id="hr19">19h</option>
+      <option value="20h" id="hr20">20h</option>
+      <option value="21h" id="hr21">21h</option>
+      <option value="22h" id="hr22">22h</option>
+      <option value="23h" id="hr23">23h</option>
+      <option value="24h" id="hr24">24h</option>
+      </select>
+  
+    <input type="text" id="input">
+    <input type="button" onclick="addTarefa()" value="Adicionar Tarefa" class="button">
   </form>
   </header>
   
   <div class="container">
-        <div class="diaDaSemana1">
+    <div class="diaDaSemana"> 
+      <h2>Hora</h2>
+      <ul id="horaDaTarefa"></ul>
+    </div>
+        <div class="diaDaSemana"> 
           <h2>Domingo</h2>
        <ul id="domingo"></ul>
         </div>
-        <div class="diaDaSemana2">
+        <div class="diaDaSemana">
           <h2>Segunda</h2>
         <ul id="segunda"></ul>
         </div>
-        <div class="diaDaSemana3">
+        <div class="diaDaSemana">
           <h2>Terça</h2>
        <ul id="terca"></ul>
         </div>
-        <div class="diaDaSemana4">
+        <div class="diaDaSemana">
           <h2>Quarta</h2>
         <ul id="quarta"></ul>
         </div>
-        <div class="diaDaSemana5">
+        <div class="diaDaSemana">
         <h2>Quinta</h2>
         <ul id="quinta"></ul>
         </div>
-        <div class="diaDaSemana6">
+        <div class="diaDaSemana">
           <h2>Sexta</h2>
          <ul id="sexta"></ul>
 
           </div>
-        <div class="diaDaSemana7">
+        <div class="diaDaSemana">
           <h2>Sábado</h2>
         <ul id="sabado"></ul>
           </div> 
   </div>
-  <div class="container-boby">
 
-  </div>
 </body>
 </html>
