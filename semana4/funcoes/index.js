@@ -249,19 +249,21 @@ const resultado = retornaSeculo(2020)
 
 */
 
-const arrayRomanos = ["I","II","III","IV","V","VI","VII","VIII",'IX',"X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX","XXI"]
-let arrayAnos = []
 
-const anos = (anoDc) => {
-  let anoInicial = 1000
-  let anoFinal = 2020
-for (let i = 0; i <= arrayRomanos.length -1; i++) {
-  for(; anoInicial <= anoFinal; anoInicial +100) {
-  console.log(`O ano ${anoInicial} pertence ao século ${arrayRomanos[i]}`)
-
+const anos = ( ano) => {
+ 
+  for (let i = 0; i <= 21; i++) {
+    if ((ano >= arrayAnos[i]) && (ano < arrayAnos[i+1])) {
+      return `O ano ${ano} pertence ao século ${arraySeculos[i]}`
+    }
   }
-  
 }
-}
+const arraySeculos = ["I","II","III","IV","V","VI","VII","VIII",'IX',"X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX","XXI"]
+const arrayAnos = [1, 101, 201, 301, 401, 501, 601, 701, 801, 901, 1001, 1101, 1201, 1301, 1401, 1501, 1601, 1701, 1801, 1901, 2001, 2101]
+console.log(anos(2))
 
-anos(1050)
+
+
+
+
+
