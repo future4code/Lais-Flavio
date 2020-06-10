@@ -12,14 +12,12 @@ function recebeDados() {
   if(blog.recebeTitulo !== "") {
     const section = document.getElementById("mostra-posts")
 
-   section.innerHTML += `<h2> ${blog.recebeTitulo}</h2>`
-   section.innerHTML += `<h3> ${blog.recebeAutor}</h3>`
-    section.innerHTML += `<p> ${blog.recebeConteudo}</p>`
+   section.innerHTML += `<h2 style="color: white"> ${blog.recebeTitulo}</h2>`
+   section.innerHTML += `<h3 style="color: white"> ${blog.recebeAutor}</h3>`
+    section.innerHTML += `<p style="color: white"> ${blog.recebeConteudo}</p>`
 
     title.value = ""
     autor.value = ""
     conteudo.value = ""
-
   }
-
 }
