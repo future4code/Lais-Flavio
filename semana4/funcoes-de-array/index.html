@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <title>Controlador de Despesas</title>
+</head>
+<body>
+  <div class="container">
+
+    <section class="cadastrar">
+      <h2>Cadastrar Despesas</h2>
+      <form action="#">
+        <label for="valor">Valor</label>
+        <input type="text" value="" id="valor" required>
+
+        <label for="tipo">Tipo</label>
+        <select name="tipo" id="tipo" required>
+          <option value="Casa">Casa</option>
+          <option value="Viagem">Viagem</option>
+          <option value="Diversao">Diversão</option>
+          <option value="Outros">Outros</option>
+        </select>     
+
+        <label for="descricao">Descrição</label>
+        <input type="text" value="" id="descricao" required>
+        <input type="button" value="Cadastrar Despesa" id="btn-cadastrar" onclick="cadastraDespesas()">
+      </form>
+    </section>
+
+    <section class="despesas">
+      <h2>Despesas Detalhadas</h2>
+      <form action="#">
+
+        <label for="tipo-despesas">Tipo</label>
+        <select name="tipo" id="tipo-despesas">
+          <option value="Casa">Casa</option>
+          <option value="Viagem">Viagem</option>
+          <option value="Diversao">Diversão</option>
+          <option value="Outros">Outros</option>
+        </select>   
+
+        <label for="minimo">Valor Mínimo</label>  
+        <input type="text" id="minimo">
+        <label for="maximo">Valor Máximo</label>  
+        <input type="text" id="maximo">
+        <input type="button" value="Filtrar">
+        <input type="button" value="Limpar filtro">
+      </form>
+      <h3 id="mostre-despesas">Despesas: </h3>
+    </section>
+    <section class="extrato">
+      <h2>Extrato</h2>
+      <h3 id="total">Valor Total:</h3>
+    </section>
+  </div>
+</body>
+</html>
