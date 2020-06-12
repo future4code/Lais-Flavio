@@ -114,6 +114,7 @@ function MaiorEMenor (array) {
 const resultado = MaiorEMenor(array[0])
 console.log(resultado)
 
+falta esse
 
 2-
 const alerte = function() {
@@ -173,6 +174,33 @@ const anonimizarPessoa =  {
 const resultado = anonimizarPessoa
 console.log(resultado)
 
+*/
+
+//Exercícios de Funções de array
+
+/*
+1-
+a:
+
+const pessoas = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+
+const adultos = []
+
+const novoArray = () => {
+  
+  for(pessoa of pessoas ) {
+    if(pessoa.idade >= 20) {
+    adultos.push(pessoa)
+    console.log(adultos)
+    }
+  }
+}
+novoArray()
 */
 
 
