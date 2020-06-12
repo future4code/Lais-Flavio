@@ -37,7 +37,21 @@ const arraySoma = []
 for(n of array){
   arraySoma.push(n + n)
 }
-console.log(arraySoma)
+console.log(arraySoma) 
 
+resultado: 2, 4, 6, 8, 10
+
+2-
+a - false
+b - true
+c - false
+d - true
+e - true
 */
+
+
+
+
+
+
 
