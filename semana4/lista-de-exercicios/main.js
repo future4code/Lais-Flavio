@@ -113,10 +113,19 @@ function MaiorEMenor (array) {
 }
 const resultado = MaiorEMenor(array[0])
 console.log(resultado)
-*/
 
+
+2-
 const alerte = function() {
   alert("Hello Labenu")
 }
 
 const resultado = alerte()
+*/
+
+//Exercícios de Objetos
+
+/*
+1-
+Objetos são extruturas para representação do mundo real e o array nos permite guardar várias informações ao mesmo tempo de forma ordenada
+*/
