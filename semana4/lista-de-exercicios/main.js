@@ -72,9 +72,36 @@ function trigonometria(a, b, c) {
 const resultado = trigonometria(58, 56, 55)
 console.log(resultado)
 
+5-
+const numero1 = 15
+const numero2 = 30
+
+if(numero1 > numero2) {
+  console.log("O maior é: " + numero1)
+}else {
+  console.log("O maior é: " + numero2)
+}
+
+if(numero1 % numero2 !== 0) {
+  console.log(`${numero1} não é divisível por ${numero2}`)
+}else if(numero2 % numero1 !== 0) {
+  console.log(`${numero2} não é divisível por ${numero1}`)
+}
+
+if((numero1 % numero2 === 0) || (numero1 / numero2 === 2 )){
+  console.log(`${numero1} é divisível por ${numero2}`)
+}else if((numero2 % numero1 === 0) || (numero2 / 2 === 0)) {
+  console.log(`${numero2} é divisível por ${numero1}`)
+}
+
+if (numero1 < numero2) {
+  const diferenca = numero2 - numero1
+  console.log(`A diferença entre eles é: ${diferenca}`)
+} else if(numero1 > numero2) {
+  const diferenca = numero1 - numero2
+  console.log(`A diferença entre eles é: ${diferenca}`)
+}
 
 */
-
-
 
 
