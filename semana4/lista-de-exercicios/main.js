@@ -58,6 +58,19 @@ while(i <= quantidadeDeNumerosPares) {
   }
 }
 
+4-
+function trigonometria(a, b, c) {
+
+  if ((a === b)&& (a ===c) && (b === c)) {
+    console.log("Equilátero")
+  }else if ((a ===b) && (a !== c) || (a !== b) && (a === c) || (b === c) && (b !== a)){
+    console.log("Isósceles")
+  } else if ((a !== b) && (a !== c) && (b !==c)) {
+    console.log("Escaleno")
+  }
+}
+const resultado = trigonometria(58, 56, 55)
+console.log(resultado)
 
 
 */
