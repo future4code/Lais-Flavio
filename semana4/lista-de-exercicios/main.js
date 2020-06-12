@@ -47,10 +47,20 @@ b - true
 c - false
 d - true
 e - true
+
+3-
+const quantidadeDeNumerosPares = 3
+let i = -1
+while(i <= quantidadeDeNumerosPares) {
+  i++
+  if(i%2 ===0){
+  console.log(i)
+  }
+}
+
+
+
 */
-
-
-
 
 
 
