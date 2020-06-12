@@ -61,7 +61,7 @@ const insereDespesas = () => {
 
 const soma = () => {
   const somaValores = arrayDeDespesas
-  somaValores.forEach(()=>{
-    console.log(somaValores.valorDespesa.value + somaValores.valorDespesa.value)
+  somaValores.forEach((despesas, index, array)=>{
+    despesas.despesasValores = despesasValores
   })
 }
