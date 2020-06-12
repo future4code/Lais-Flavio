@@ -25,3 +25,19 @@ A segunda mensagem exibe a quantidade de numeros pares no array1 e a terceira no
 e caso numero seja maior que o numero 0 da variavel numero2, numero2 recebe o valor de número. As mensagens que seriam impressas no console seriam:
 numero1 receberá o valor de -10 que é o menor numero do array. A variavel numero2 receberá 1590 que é o maior numero do array.
 */
+
+// Exercícios de lógica de Programação
+
+/*
+1- 
+for/of, for/in, for/each
+
+const array = [1, 2, 3, 4, 5]
+const arraySoma = []
+for(n of array){
+  arraySoma.push(n + n)
+}
+console.log(arraySoma)
+
+*/
+
