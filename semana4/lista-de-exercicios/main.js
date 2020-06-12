@@ -223,7 +223,19 @@ const novoArray = () => {
 }
 novoArray()
 
+2-
+a:
+const array = [1, 2, 3, 4, 5, 6]
+const arrayMultiplicado = []
+
+const multiplicaArray = () => {
+ for(n of array) {
+   arrayMultiplicado.push(n*2)
+ }
+ console.log(arrayMultiplicado)
+}
+
+multiplicaArray()
+
 */
-
-
 
