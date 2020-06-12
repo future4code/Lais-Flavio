@@ -131,18 +131,18 @@ const resultado = alerte()
 Objetos são extruturas para representação do mundo real e o array nos permite guardar várias informações ao mesmo tempo de forma ordenada
 
 2-
-function criaRetangulo(lado1, lado2) {
+function criaTriangulo(lado1, lado2) {
 
-  const retangulo = {
+  const triangulo = {
     largura: lado1,
     altura: lado2,
     perimetro: 2*(lado1 + lado2),
     area: lado1 * lado2
   }
-  return (`A largura do retangulo é: ${retangulo.largura}, a altura é: ${retangulo.altura}, o perímetro é: ${retangulo.perimetro} e a área é: ${retangulo.area}`)
+  return (`A largura do triangulo é: ${triangulo.largura}, a altura é: ${triangulo.altura}, o perímetro é: ${triangulo.perimetro} e a área é: ${triangulo.area}`)
 }
 
-const resultado = criaRetangulo(55, 24)
+const resultado = criaTriangulo(55, 24)
 console.log(resultado)
 
 3-
