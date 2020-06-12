@@ -237,5 +237,18 @@ const multiplicaArray = () => {
 
 multiplicaArray()
 
+b-
+const array = [1, 2, 3, 4, 5, 6]
+const arrayMultiplicado = []
+
+const multiplicaArray = () => {
+ for(n of array) {
+   arrayMultiplicado.push(n*3 + "")
+ }
+ console.log(arrayMultiplicado)
+}
+
+multiplicaArray()
+
 */
 
