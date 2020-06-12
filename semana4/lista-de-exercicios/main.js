@@ -104,4 +104,19 @@ if (numero1 < numero2) {
 
 */
 
+// Exercícios de Funções
 
+/*
+1-
+const array = [55, 42, 98, 2, 4, 63, 23, 15]
+function MaiorEMenor (array) {
+}
+const resultado = MaiorEMenor(array[0])
+console.log(resultado)
+*/
+
+const alerte = function() {
+  alert("Hello Labenu")
+}
+
+const resultado = alerte()
