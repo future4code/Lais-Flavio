@@ -13,4 +13,10 @@ Inicia-se declarando a função e passando 2 parâmetros. É criada uma variáve
 Cada tipo multiplica valor do investimento por seu valor de rendimento. Caso satisfaça uma das opções, a verificação pára.
 Caso não satisfaça nenhuma delas, uma  mensagem de alerta é acionada exibindo tipo incorreto.  A função retorna a variavel valorAposInvestimento.
 São declaradas 2 constantes que recebem e chamam a função com seu tipo de investimento e o valor investido e é exibido no console o rendimento.
+
+3-
+Criado 3 arrays, sendo 2 vazios. O primeiro contém os numeros que serão verificados se são pares ou ímpares. 
+É criado um loop para percorrer o array e caso o módulo do numero dividido por 2 seja igual a 0, é enviado para o array1 por que é par,
+caso não seja, é enviado para o array2 por ser ímpar. No console é exibido 3 mensagens: A primeira exibe o total de números no array usando .length
+A segunda mensagem exibe a quantidade de numeros pares no array1 e a terceira no array2 que possui os números ímpares.
 */
