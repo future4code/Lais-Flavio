@@ -144,6 +144,18 @@ function criaRetangulo(lado1, lado2) {
 const resultado = criaRetangulo(55, 24)
 console.log(resultado)
 
+3-
+const filmeFavorito = {
+  titulo: "A família do futuro",
+  ano: 2007,
+  diretor: "Stephen J. Anderson",
+  atores: ["Lewis", "Wilbur", "Goob - o cara do chapéu-coco"]
+}
+
+console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, 
+de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor},
+e estrelado por: ${filmeFavorito.atores[0]}, ${filmeFavorito.atores[1]} e ${filmeFavorito.atores[2]} `)
+
 */
 
 
