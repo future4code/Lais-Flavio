@@ -156,7 +156,23 @@ console.log(`Venha assistir ao filme ${filmeFavorito.titulo},
 de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor},
 e estrelado por: ${filmeFavorito.atores[0]}, ${filmeFavorito.atores[1]} e ${filmeFavorito.atores[2]} `)
 
-*/
+4-
+const pessoa = {
+  nome: "Gabriel",
+  idade: 29,
+  email: "gb@gmail.com",
+  endereco: "Rua dos passinhos"
+}
 
+const anonimizarPessoa =  {
+    ...pessoa,
+  nome: "Anônimo"
+
+}
+
+const resultado = anonimizarPessoa
+console.log(resultado)
+
+*/
 
 
