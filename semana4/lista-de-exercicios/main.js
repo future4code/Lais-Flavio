@@ -201,6 +201,29 @@ const novoArray = () => {
   }
 }
 novoArray()
+
+b:
+const pessoas = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+
+const menoresDeIdade = []
+
+const novoArray = () => {
+  
+  for(pessoa of pessoas ) {
+    if(pessoa.idade < 20) {
+    menoresDeIdade.push(pessoa)
+    console.log(menoresDeIdade)
+    }
+  }
+}
+novoArray()
+
 */
+
 
 
