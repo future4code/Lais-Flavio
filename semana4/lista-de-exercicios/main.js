@@ -320,3 +320,26 @@ novoArray()
 */
 
 
+const consultas = [
+	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+]
+
+const cancelados = []
+const naoCancelados = []
+
+const mandaEmail = () => {
+  for(pessoa of consultas) {
+    if(pessoa.cancelada === true) {
+      cancelados.push(pessoa)
+    }else {
+      naoCancelados.push(pessoa)
+    }
+  }
+  console.log(`Olá, ${cancelados.nome}. Infelizmente, sua consulta marcada  para o dia${cancelados.dataDaConsulta}foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la`)
+  console.log( naoCancelados)
+}
+
+mandaEmail()
