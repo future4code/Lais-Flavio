@@ -250,5 +250,26 @@ const multiplicaArray = () => {
 
 multiplicaArray()
 
+c -
+const array = [1, 2, 3, 4, 5, 6]
+const arrayParImpar = []
+let par
+let impar
+const multiplicaArray = () => {
+ for(n of array) {
+   if(n % 2 ===0) {
+     par = n
+     arrayParImpar.push(`${par} é par` + "")
+   }else if(n % 2 !== 0){
+     impar = n
+     arrayParImpar.push(`${impar} é ímpar`+ "")
+   }
+ }
+ console.log(arrayParImpar )
+}
+
+multiplicaArray()
+
 */
+
 
