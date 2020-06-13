@@ -108,9 +108,6 @@ if (numero1 < numero2) {
 
 /*
 1-
-
-
-
 let array = [25, 46, 2, 10, 33, 62]
 let numMaior = Infinity
 let numMenor = 0
@@ -390,17 +387,7 @@ const contas = [
 ]
 
 function atualizaSaldo () {
- /* contas.forEach(item => {
-    item.compras.reduce((total, conta)=>{
-      return total + conta
-    },0)
- console.log(item.compras)
-  })*/
 
-  const comprasTotal = contas.reduce((total, compra)=>{
-    return total + compra.compras
-  },0)
-  console.log(comprasTotal)
 }
 atualizaSaldo()
 
