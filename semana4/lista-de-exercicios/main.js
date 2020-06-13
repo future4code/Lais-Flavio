@@ -108,13 +108,38 @@ if (numero1 < numero2) {
 
 /*
 1-
-const array = [55, 42, 98, 2, 4, 63, 23, 15]
-function MaiorEMenor (array) {
-}
-const resultado = MaiorEMenor(array[0])
-console.log(resultado)
 
-falta esse
+
+
+let array = [25, 46, 2, 10, 33, 62]
+let numMaior = Infinity
+let numMenor = 0
+
+function imprimeMaiorMenor () {
+  for(item of array) {
+    if(item < numMaior) {
+      numMaior = item
+    }else if (item > numMenor) {
+      numMenor = item
+    }
+  }
+  array = array.filter((num ,item, array)=> {
+    return num !== numMaior
+  })
+  array = array.filter((num ,item, array)=> {
+    return num !== numMenor
+  })
+  for (item of array) {
+    if(item < numMaior) {
+      numMaior = item
+    }else if (item > array) {
+      numMenor = item
+    }
+  }
+  return `${numMaior} e ${numMenor}`
+}
+
+console.log(imprimeMaiorMenor(array))
 
 2-
 const alerte = function() {
@@ -317,9 +342,8 @@ const novoArray = () => {
   }
 }
 novoArray()
-*/
 
-
+4-
 const consultas = [
 	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
 	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
@@ -354,3 +378,33 @@ const mandaEmail = () => {
 }
 
 mandaEmail()
+*/
+
+const contas = [
+	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
+]
+
+function atualizaSaldo () {
+ /* contas.forEach(item => {
+    item.compras.reduce((total, conta)=>{
+      return total + conta
+    },0)
+ console.log(item.compras)
+  })*/
+
+  const comprasTotal = contas.reduce((total, compra)=>{
+    return total + compra.compras
+  },0)
+  console.log(comprasTotal)
+}
+atualizaSaldo()
+
+
+
+
+
