@@ -334,12 +334,23 @@ const mandaEmail = () => {
   for(pessoa of consultas) {
     if(pessoa.cancelada === true) {
       cancelados.push(pessoa)
-    }else {
+      if(pessoa.genero === "masculino") {
+      console.log(`Olá, Sr. ${pessoa.nome}. Infelizmente, sua consulta marcada  para o dia ${pessoa.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la`)
+      }else {
+      console.log(`Olá, Sra. ${pessoa.nome}. Infelizmente, sua consulta marcada  para o dia ${pessoa.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la`)
+      }
+    }else if(pessoa.cancelada === false){
       naoCancelados.push(pessoa)
+      if(pessoa.genero === "masculino") {
+    console.log(`Olá, Sr. ${pessoa.nome}. Estamos enviando esta mensagem para lembrá-lo da sua consulta no dia ${pessoa.dataDaConsulta}. Por favor, acuse o recebimento deste email`)
+      }else {
+    console.log(`Olá, Sra. ${pessoa.nome}. Estamos enviando esta mensagem para lembrá-la da sua consulta no dia ${pessoa.dataDaConsulta}. Por favor, acuse o recebimento deste email`)
+
+      }
     }
   }
-  console.log(`Olá, ${cancelados.nome}. Infelizmente, sua consulta marcada  para o dia${cancelados.dataDaConsulta}foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la`)
   console.log( naoCancelados)
+  console.log( cancelados)
 }
 
 mandaEmail()
