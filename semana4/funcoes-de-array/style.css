@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.cadastrar {
+  height: 200px;
+}
+
+.despesas {
+}
+
+.extrato {
+  width: 100%;
+  text-align: center;
+}
