@@ -375,8 +375,8 @@ const mandaEmail = () => {
 }
 
 mandaEmail()
-*/
 
+5-
 const contas = [
 	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
 	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
@@ -386,12 +386,45 @@ const contas = [
 	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
 ]
 
-function atualizaSaldo () {
-
+function atualizaSaldo (sal) {
+  for (item of contas) {
+    const soma = item.compras
+    const val = soma.reduce((acc, num)=> acc + num)//valores somados
+    const atualiza = item.saldoTotal // saldoTotal
+    item.saldoTotal = atualiza - val
+    console.log(item)
+  }
 }
-atualizaSaldo()
+(atualizaSaldo(contas))
+
+*/
 
 
 
+
+
+
+
+/*
+let array = [25, 46, 2, 10, 33, 62]
+let numMenor = Infinity
+let numMaior = 0
+
+function imprimeMaiorMenor () {
+  for(item of array) {
+    if(item < numMenor) {
+      numMenor = item
+    }else if (item > numMaior) {
+      numMaior = item
+      array.pop()
+    }
+    
+  }
+  return `${numMenor} e ${numMaior}`
+}
+
+console.log(imprimeMaiorMenor(array))
+
+*/
 
 
