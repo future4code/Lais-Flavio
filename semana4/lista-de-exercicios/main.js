@@ -375,7 +375,7 @@ const contas = [
 	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
 ]
 
-function atualizaSaldo (sal) {
+function atualizaSaldo () {
   for (item of contas) {
     const soma = item.compras
     const val = soma.reduce((acc, num)=> acc + num)//valores somados
