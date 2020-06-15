@@ -109,34 +109,23 @@ if (numero1 < numero2) {
 /*
 1-
 let array = [25, 46, 2, 10, 33, 62]
-let numMaior = Infinity
-let numMenor = 0
+let numMenor = Infinity
+let numMaior = 0
 
 function imprimeMaiorMenor () {
   for(item of array) {
-    if(item < numMaior) {
-      numMaior = item
-    }else if (item > numMenor) {
+    if(item < numMenor ) {
       numMenor = item
+    }else if (item > numMaior) {
+      numMaior = item
+      array.pop()
     }
   }
-  array = array.filter((num ,item, array)=> {
-    return num !== numMaior
-  })
-  array = array.filter((num ,item, array)=> {
-    return num !== numMenor
-  })
-  for (item of array) {
-    if(item < numMaior) {
-      numMaior = item
-    }else if (item > array) {
-      numMenor = item
-    }
-  }
-  return `${numMaior} e ${numMenor}`
+  return `${numMenor} e ${numMaior}`
 }
 
 console.log(imprimeMaiorMenor(array))
+
 
 2-
 const alerte = function() {
@@ -405,26 +394,8 @@ function atualizaSaldo (sal) {
 
 
 
-/*
-let array = [25, 46, 2, 10, 33, 62]
-let numMenor = Infinity
-let numMaior = 0
 
-function imprimeMaiorMenor () {
-  for(item of array) {
-    if(item < numMenor) {
-      numMenor = item
-    }else if (item > numMaior) {
-      numMaior = item
-      array.pop()
-    }
-    
-  }
-  return `${numMenor} e ${numMaior}`
-}
 
-console.log(imprimeMaiorMenor(array))
 
-*/
 
 
