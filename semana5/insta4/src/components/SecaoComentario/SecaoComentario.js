@@ -8,6 +8,7 @@ export class SecaoComentario extends Component {
 
 	onChangeComentario = event => {
 		this.setState({coments: event.target.value})
+		console.log(this.state.coments)
 	}
 	onClickComentario = () => {
 		console.log(this.state.coments)
