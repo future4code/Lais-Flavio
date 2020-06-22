@@ -90,6 +90,7 @@ class Post extends React.Component {
           valorContador={this.state.numeroComentarios}//estado que será alterado a cada comentário feito
         />
       </div>
+      
       {componenteComentario}
     </div>
   }
