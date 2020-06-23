@@ -24,17 +24,20 @@ class App extends React.Component {
       inputValue: '',
       filter: ''
     }
-/*
+
   componentDidUpdate() {
-    localStorage.setItem("tarefa", JSON.stringify(this.state.tarefa))
+    localStorage.setItem("tarefa", JSON.stringify(this.state.tarefas))
   };
 
   componentDidMount() {
-    const tarefaString = localStorage.getItem("tarefa")
-    const tarefaObjeto = JSON.parse(tarefaString) 
-    console.log(tarefaObjeto)
+    if(localStorage.getItem("tarefa")){
+      const tarefaString = localStorage.getItem("tarefa")
+      const tarefaObjeto = JSON.parse(tarefaString) 
+      console.log(tarefaObjeto)
+      console.log("entrou")
+    }
   };
-*/
+
   onChangeInput = (event) => {
     this.setState({inputValue: event.target.value})
   }
@@ -52,8 +55,8 @@ class App extends React.Component {
 
   selectTarefa = (id) => {
     const tarefaSelecionada = this.state.tarefas.map(tarefa => {
-      if(tarefa.id ===id) {
-           return tarefa.completa === !tarefa.completa
+      if(tarefa.id === id) {
+           return {...tarefa, completa: !tarefa.completa}
          }
        })
      this.setState({tarefas: tarefaSelecionada})
