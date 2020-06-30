@@ -9,7 +9,7 @@ const AppDiv = styled.div`
   margin: 30px auto;
   justify-content: center;
 `
-
+ 
 const AcessarList =  styled.div`
   margin-left: 660px;
   padding: 30px;
@@ -68,9 +68,9 @@ class App extends React.Component {
     }).then(response => {
       this.setState({ listaNomes: response.data})
       console.log(response.data)
-
     }).catch(error => {
       console.log(error.data)
+
     })
   }
 
@@ -84,12 +84,12 @@ class App extends React.Component {
         Authorization: "lais-flavio-turing"
       }
     }).then(response => {
-      this.pegaNomes()
-      this.setState({ nome: "" , email: ""})
+        this.pegaNomes()
+        this.setState({ nome: "" , email: ""})
       alert("Usuário criado com sucesso")
     }).catch(error => {
-      alert("Não foi possível criar seu usuário")
       console.log(error.data)
+      alert("Não foi possível criar seu usuário")
     })
   }
 
@@ -125,7 +125,6 @@ class App extends React.Component {
         {this.state.listaNomes.map(nomesLista => {
             return <p>{nomesLista.name}</p>
         })}
-          <ButtonAlteraTela>Apagar usuário</ButtonAlteraTela>
       </AppDiv>
     );
   }
