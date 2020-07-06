@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
+import Feed from './Feed'
 
 const Body = styled.div`
   color: #FFF;
@@ -9,7 +10,10 @@ const Body = styled.div`
 
 const Header = styled.div`
   padding: 36px;
+  display: flex;
 `
+
+
 
 const Button = styled.button`
   width: 150px;
@@ -45,9 +49,6 @@ class Playlist extends React.Component {
     playlist: [],
   }
 
-  componentDidMount() {
-    this.playlistCriada()
-  }
 
   onChangeInput = (e) => {
     const novoName = e.target.value
@@ -66,39 +67,25 @@ class Playlist extends React.Component {
     ).then(() => {
       alert(`Playlist criada com sucesso`)
       this.setState({name: "" })
+      console.log(this.state.playlist)
+      console.log(this.state.name)
     }).catch(error => {
       alert("Erro ao criar playlist")
       console.log(error.message)
     })
   }
 
-  playlistCriada = () => {
-    axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists", 
-      axiosConfig
-      ).then(response => {
-        console.log(response.data.result.list)
-        this.setState({ playlist: response.data.result.list })
-      })
-  }
+
 
   render() {
-    const renderizaLista = this.state.playlist.map((item) => {
-      return (
-        <p>{item.name}</p>
-        )
-    })
+   
     return (
       <Body>
         <Header>
           <Input type="text" placeholder="Criar playlist" value={this.state.name} onChange={this.onChangeInput}/>
-          <Button onClick={this.adicionaPlaylist}>Adicionar Playlist</Button>        
+          <Button onClick={this.adicionaPlaylist}>Adicionar Playlist</Button>
         </Header>
-        <div>
-          <ul>
-          {this.state.playlist.length === 0 && <div>Carregando...</div>}
-          {renderizaLista}
-          </ul>
-        </div>
+       
     </Body>
     )
   }
