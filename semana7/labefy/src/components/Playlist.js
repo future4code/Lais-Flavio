@@ -117,6 +117,7 @@ class Playlist extends React.Component {
     ).then(() => {
       alert(`Playlist ${this.state.name} criada com sucesso`)
       this.setState({name: "" })
+      
     }).catch(error => {
       alert("Erro ao criar playlist")
       console.log(error.message)
@@ -129,26 +130,25 @@ class Playlist extends React.Component {
       artist: this.state.artist,
       url: this.state.url,
     }
-    console.log(this.state.userId)
-    axios.post(`https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${this.state.userId}/tracks`, 
+      axios.post(`https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${this.state.playlistName}/tracks`, 
       body, 
-      console.log(this.state.userId),
       axiosConfig
     ).then(response => {
-      alert("Musica adicionada com sucesso!")
-        this.setState({ musicas: response.data.result.tracks })
+        alert(`Musica adicionada com sucesso!`)
+        console.log(response)
+       // this.setState({ musicas: response.data.result.tracks })
+        
         this.setState({name: "", artist: "", url: ""})  
-        this.pegaMusicas()
-        console.log(response)    
+
     }).catch(error => {
       alert(error.message)
     })
   }
 
-  
-  pegaMusicas = playlistId => {
+  /*
+  pegaMusicas = playlistName => {
     axios
-    .get(`https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${playlistId}/tracks`,
+    .get(`https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${playlistName}/tracks`,
       {
         headers: {
           Authorization: "lais-flavio-turing"
@@ -156,30 +156,25 @@ class Playlist extends React.Component {
       }
     )
     .then(response => {
-        this.setState({playlistId: playlistId})
-        this.setState({musicas: response.data.result.tracks})
+        this.setState({playlistName: playlistName})
+        console.log(response)
     })
     .catch(error => {
       console.log(error.message)
     })
   }
-
+*/
   renderizaPlaylist = () => {
     axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
       axiosConfig
     ).then(response => {
         this.setState({ playlist: response.data.result.list })
+
     })
   } 
 
   onChangePlay = event => {
-    const music = event.target.value
-    axios.get(`https://us-central1-labenu-apis.cloudfunctions.net/labefy/${music}`)
-    .then(response => {
-      this.setState ({ playlistName: response.data.result.list })
-    }).catch(error => {
-      console.log(error.message)
-    })
+      this.setState ({ playlistName:  event.target.value })
   }
 
   render() {
@@ -188,15 +183,15 @@ class Playlist extends React.Component {
       <Body>
 
         <AddPlay>
-        <Input type="text" placeholder="Criar playlist" value={this.state.name} onChange={this.onChangeInput}/>
-        <Button onClick={this.adicionaPlaylist}>Adicionar Playlist</Button>
+          <Input type="text" placeholder="Criar playlist" value={this.state.name} onChange={this.onChangeInput}/>
+          <Button onClick={this.adicionaPlaylist}>Adicionar Playlist</Button>
         </AddPlay>
-      <AddMusica>
-        <select onChange={this.onChangePlay}>
+        <AddMusica>
+        <select onChange={this.onChangePlay} value={this.state.playlistName}>
           <option value={""} />
           {this.state.playlist.map(play => {
             return (
-              <option key={play.id} value={play.name}>
+              <option key={play.id} value={play.id}>
                 {""}
                 {play.name}
               </option>

@@ -68,8 +68,9 @@ class DetalhesPlaylist extends React.Component {
     playlist: [],
     musicas: [],
     detalhesMusicas: "lista",
-    userId: "",
-    verMusics: "musicas"
+    playlistId: "",
+    verMusics: "detalhes",
+
   }
 
   componentDidMount() {
@@ -86,7 +87,8 @@ class DetalhesPlaylist extends React.Component {
 
   apagaPlaylist = (playlistId) => {
     if(window.confirm("Deseja deletar playlist?")){
-    axios.delete(`https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${playlistId}`, axiosConfig
+      axios.delete(`https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${playlistId}`, 
+      axiosConfig
       ).then(() => {
       alert("Playlist deletada com sucesso!")
       this.renderizaPlaylist()
@@ -96,22 +98,32 @@ class DetalhesPlaylist extends React.Component {
     }
   }
 
-  onChangeMusicasPage = (verMusics) => {
-    this.setState({ verMusics: verMusics })
-  }
-  
-  verMusicas = () => {
-    if(this.state.verMusics === "musicas") {
-      return <Musicas 
-        onChangeMusicasPage={this.onChangeMusicasPage}
-      />
+  onClickMusicsPage = () => {
+    if(this.state.verMusics === "musicas" ){
+      return <Musicas />
     }
   }
 
-  
+
+
+  verMusicas = (playlistId) => {
+    axios.get(`https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${playlistId}/tracks`, 
+      axiosConfig
+    ).then(response => {
+      alert("Musicas renderizadas com sucesso!")
+      this.setState({ verMusics: "musicas" })
+      this.setState({ musicas: response.data.result.tracks })
+
+      console.log(this.state.musicas)
+    }).catch(e => {
+      console.log(e.message)
+      alert("Não foi possivel renderizar musicas!")
+    })
+   
+  }
 
   render() {
-
+  
     
     return (
       <DivPlay>
@@ -119,10 +131,16 @@ class DetalhesPlaylist extends React.Component {
         <Carregando>
           <img src={spinner} alt="Carregando" /> 
         </Carregando>}
-        {this.state.playlist.map(play => {
+        {this.state.verMusics === "musicas" && <Musicas
+          lista = {this.state.musicas}
+        /> }
+
+        {this.state.verMusics !== "musicas" &&
+          this.state.playlist.map(play => {
+
           return(
               <Li key={play.id}>
-                <Span onClick={() => this.mostraDetalhes(play.id)}>
+                <Span>
                   {play.name}
                 </Span>
                 <Btn>
@@ -131,7 +149,8 @@ class DetalhesPlaylist extends React.Component {
                 </Btn>
               </Li>
           )
-        })}
+        })
+      }
       </DivPlay>
     )
   }
