@@ -51,3 +51,7 @@ class App extends React.Component {
 
 
 export default App;
+
+
+response.data.types[0].type.name só cheguei no tipo assim
+
