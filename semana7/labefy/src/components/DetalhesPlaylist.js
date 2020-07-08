@@ -70,7 +70,19 @@ class DetalhesPlaylist extends React.Component {
     detalhesMusicas: "lista",
     playlistId: "",
     verMusics: "detalhes",
-
+    urlArray: ["http://spoti4.future4.com.br/1.mp3",
+    " http://spoti4.future4.com.br/2.mp3",
+    "http://spoti4.future4.com.br/3.mp3",
+    "http://spoti4.future4.com.br/4.mp3",
+    "http://spoti4.future4.com.br/5.mp3",
+    "http://spoti4.future4.com.br/6.mp3",
+    "http://spoti4.future4.com.br/7.mp3",
+    "http://spoti4.future4.com.br/8.mp3",
+    "http://spoti4.future4.com.br/9.mp3",
+    "http://spoti4.future4.com.br/10.mp3",
+    "http://spoti4.future4.com.br/11.mp3",
+    "http://spoti4.future4.com.br/12.mp3",
+  ]
   }
 
   componentDidMount() {
@@ -133,6 +145,7 @@ class DetalhesPlaylist extends React.Component {
         </Carregando>}
         {this.state.verMusics === "musicas" && <Musicas
           lista = {this.state.musicas}
+          url = {this.state.urlArray}
         /> }
 
         {this.state.verMusics !== "musicas" &&

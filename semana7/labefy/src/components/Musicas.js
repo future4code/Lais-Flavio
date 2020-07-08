@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import ReactAudioPlayer from 'react-audio-player';
 
 const Li = styled.li`
   color: #FFF;
@@ -11,8 +12,16 @@ const Li = styled.li`
 
 class Musicas extends React.Component {
 
+
   render() {
-    
+
+    const u = this.props.url.map(ur => {
+      return (
+        <li>
+          Url: {ur}
+        </li>
+      )
+    })
     return (
       <div>
         <ul>
@@ -23,11 +32,12 @@ class Musicas extends React.Component {
                <br></br>
                Artista: {list.artist}
                <br></br>
-               /*
-               Url: <audio controls>
-                 <source={list.url} type="">
-               </audio>
-*/
+            
+               <ReactAudioPlayer
+                  src={u}
+                  autoPlay
+                  controls
+                />
              </Li>
              )
          })}
