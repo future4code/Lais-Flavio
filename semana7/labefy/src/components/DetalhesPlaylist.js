@@ -49,7 +49,7 @@ const Carregando = styled.li`
 const DivPlay = styled.div`
   width: 600px;
   height: 50vh;
-  border: 1px solid #0512d8;
+  border: 1px solid #2de54f;
   margin: 0 auto;
   margin-top: 25px;
   overflow: auto;
@@ -70,18 +70,19 @@ class DetalhesPlaylist extends React.Component {
     detalhesMusicas: "lista",
     playlistId: "",
     verMusics: "detalhes",
-    urlArray: ["http://spoti4.future4.com.br/1.mp3",
-    " http://spoti4.future4.com.br/2.mp3",
-    "http://spoti4.future4.com.br/3.mp3",
-    "http://spoti4.future4.com.br/4.mp3",
-    "http://spoti4.future4.com.br/5.mp3",
-    "http://spoti4.future4.com.br/6.mp3",
-    "http://spoti4.future4.com.br/7.mp3",
-    "http://spoti4.future4.com.br/8.mp3",
-    "http://spoti4.future4.com.br/9.mp3",
-    "http://spoti4.future4.com.br/10.mp3",
-    "http://spoti4.future4.com.br/11.mp3",
-    "http://spoti4.future4.com.br/12.mp3",
+    urlArray: [
+      "http://spoti4.future4.com.br/1.mp3",
+      " http://spoti4.future4.com.br/2.mp3",
+      "http://spoti4.future4.com.br/3.mp3",
+      "http://spoti4.future4.com.br/4.mp3",
+      "http://spoti4.future4.com.br/5.mp3",
+      "http://spoti4.future4.com.br/6.mp3",
+      "http://spoti4.future4.com.br/7.mp3",
+      "http://spoti4.future4.com.br/8.mp3",
+      "http://spoti4.future4.com.br/9.mp3",
+      "http://spoti4.future4.com.br/10.mp3",
+      "http://spoti4.future4.com.br/11.mp3",
+      "http://spoti4.future4.com.br/12.mp3",
   ]
   }
 

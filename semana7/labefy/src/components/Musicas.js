@@ -14,16 +14,19 @@ class Musicas extends React.Component {
 
 
   render() {
-
-    const u = this.props.url.map(ur => {
-      return (
-        <li>
-          Url: {ur}
-        </li>
-      )
+    const urls = this.props.url.map(url => {
+      return <ReactAudioPlayer
+      src={url}
+      //autoPlay
+      controls
+    />
     })
+
     return (
       <div>
+        <ul>
+          
+        </ul>
         <ul>
          {this.props.lista.map(list => {
            return (
@@ -32,12 +35,8 @@ class Musicas extends React.Component {
                <br></br>
                Artista: {list.artist}
                <br></br>
-            
-               <ReactAudioPlayer
-                  src={u}
-                  autoPlay
-                  controls
-                />
+              Play: {urls}
+               
              </Li>
              )
          })}

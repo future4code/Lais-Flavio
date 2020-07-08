@@ -14,7 +14,7 @@ const Button = styled.button`
   width: 200px;
   height: 50px;
   font-size: 24px;
-  border: 1px solid #0512d8;
+  border: 1px solid #2de54f;
   color: #FFF;
   outline: 0;
   border-radius: 8px;
@@ -25,14 +25,14 @@ const Button = styled.button`
   margin: 0 auto;
   margin-top: 60px;
   padding: 4px;
-  box-shadow: 2px 2px 8px 2px #0512d8;
+  box-shadow: 2px 2px 8px 2px #2de54f;
 
 `
 
 
 const H1 = styled.h1`
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #0512d8;
+  color: #2de54f;
   margin: 0 auto;
   display: flex;
   justify-content: center;

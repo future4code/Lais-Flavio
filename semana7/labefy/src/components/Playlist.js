@@ -11,27 +11,27 @@ const Body = styled.div`
 
 const AddPlay = styled.div`
   max-width: 400px;
-  border: 1px solid #0512d8;
-  box-shadow: 2px 2px 8px 2px #0512d8;
+  border: 1px solid #2de54f;
+  box-shadow: 2px 2px 8px 2px #2de54f;
   margin-left: 8px;
 `
 
 const AddMusica = styled.div`
   max-width: 400px;
-  border: 1px solid #0512d8;
-  box-shadow: 2px 2px 8px 2px #0512d8;
+  border: 1px solid #2de54f;
+  box-shadow: 2px 2px 8px 2px #2de54f;
   margin-left: 8px;
 `
 const BuscaPlay = styled.div`
   max-width: 400px;
-  border: 1px solid #0512d8;
-  box-shadow: 2px 2px 8px 2px #0512d8;
+  border: 1px solid #2de54f;
+  box-shadow: 2px 2px 8px 2px #2de54f;
   margin-left: 8px;
 `
 const ApagarPlay = styled.div`
   max-width: 300px;
-  border: 1px solid #0512d8;
-  box-shadow: 2px 2px 8px 2px #0512d8;
+  border: 1px solid #2de54f;
+  box-shadow: 2px 2px 8px 2px #2de54f;
   margin-left: 8px;
 `
 
