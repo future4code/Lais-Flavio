@@ -5,7 +5,10 @@ export const DivLogin = styled.div`
   justify-content: center;
   margin-top: 12%;
 `
-export const Div
+export const DivLogoLogin = styled.div`
+
+`
+
 export const DivFormLogin = styled.div`
   display: flex;
   flex-direction: column;
