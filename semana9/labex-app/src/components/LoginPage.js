@@ -12,6 +12,7 @@ const LoginPage = () => {
     history.push('/home')
   }
 
+
   return (
     <DivLoginDad>
       <ButtonLoginBackHome onClick={goToBackHome}>Back to Home</ButtonLoginBackHome>
@@ -34,6 +35,7 @@ const LoginPage = () => {
           </DivButtonLogin>
         </DivFormLogin>
       </DivLogin>
+      
     </DivLoginDad>
   )
 }
