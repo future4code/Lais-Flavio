@@ -5,13 +5,22 @@ export const DivLoginDad = styled.div`
  list-style: none;
  color: black;
 `
+export const DivHomeDad = styled.div`
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ list-style: none;
+ color: black;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin-top: 25vh;
+`
 
 export const HeaderHomePage = styled.header`
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #c4c2c2;
   position: absolute;
-  width: 90vw;
+  width: 98.9vw;
   transition: top 0.3s;
   top: 0;
 `
@@ -19,6 +28,15 @@ export const HeaderHomePage = styled.header`
 
 export const H1 = styled.h1`
   margin: 20px;
+`
+export const H1Home = styled.h1`
+  margin: 0 auto;
+  margin-bottom: 80px;
+  background: #5D1049;
+  color: #FFF;
+  padding: 16px;
+  border: 1px solid #5D1049;
+  border-radius: 8px;
 `
 export const Paragraph = styled.p`
   display: flex;
@@ -61,6 +79,12 @@ export const DivLogin = styled.div`
   justify-content: center;
   margin-top: 12%;
 `
+export const DivLoginAplication = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+`
+
 export const DivLogoLogin = styled.div`
   margin-right: 150px;
 `
@@ -75,13 +99,32 @@ export const InputForm = styled.input`
   margin: 4px;
 `
 
+export const TextAreaForm = styled.textarea`
+  width: 500px;
+  height: 35px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #999999;
+  outline: none;
+  margin: 4px;
+  resize: none;
+  overflow: auto;
+`
+
 export const DivFormLogin = styled.div`
   display: flex;
   flex-direction: column;
+  background: #FFF;
+  color: #1A1A1A;
+  max-width: 600px;
+  border: 2px solid #5D1049;
+  padding: 16px;
 `
 export const DivButtonLogin = styled.div`
   margin-top: 60px;
   display: flex;
+  justify-content: center;
 `
 
 export const ButtonLogin = styled.button`
@@ -96,6 +139,7 @@ export const ButtonLogin = styled.button`
   justify-content: center;
   align-items: center;
   border: none;
+  font-size: 16px;
 `
 export const ButtonLoginBackHome = styled.button`
   outline: none;
@@ -135,12 +179,26 @@ export const ButtonAply = styled.button`
 export const FormLogin = styled.form`
   display: flex;
   flex-direction: column;
+  padding:16px;
+`
+
+export const FormLoginAply = styled.form`
+  display: flex;
+  flex-direction: column;
+  padding:16px;
+  max-width: 600px;
 `
 
 export const LabelFormLogin = styled.label`
   font-size: 16px;
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+`
+
+export const Select = styled.select`
+  padding: 16px 0;
+  color: #999999;
+  border: none;
 `
 
 export const RocketImg = styled.img`
@@ -162,9 +220,33 @@ export const MainHome = styled.main`
 
 export const CardsTrips = styled.div`
   border: 2px solid #5D1049;
-  border-radius: 8px;
   padding: 25px;
   margin-bottom: 16px;
+`
+
+export const CardsTripsHome = styled.div`
+  width: 310px;
+  border: 2px solid #5D1049;
+  padding: 25px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  :hover { 
+    background: #5D1049;
+    color: #FFF;
+
+  }
+`
+export const ImgLogin = styled.img`
+  width: 55px;
+  height: 55px;
+  display: flex;
+  border-radius: 8px;
+  :hover { 
+   border: 1px solid  #5D1049; 
+    border-radius: 8px;
+  }
 `
 
 export const TitleHome = styled.h2`
