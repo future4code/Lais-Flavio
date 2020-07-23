@@ -11,7 +11,7 @@ export const HeaderHomePage = styled.header`
   justify-content: space-around;
   border-bottom: 1px solid #c4c2c2;
   position: absolute;
-  width: 100vw;
+  width: 90vw;
   transition: top 0.3s;
   top: 0;
 `
@@ -51,7 +51,7 @@ export const Li = styled.li`
   text-align: center;
   :hover{
     text-align: center;
-   background: #9933FF;
+   background: #5D1049;
     cursor: pointer;
   }
 `
@@ -88,13 +88,14 @@ export const ButtonLogin = styled.button`
   outline: none;
   width: 200px;
   height: 50px;
-  background: #9933FF;
+  background: #5D1049;
   margin-right: 16px;
   color: #FFF;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 `
 export const ButtonLoginBackHome = styled.button`
   outline: none;
@@ -109,7 +110,7 @@ export const ButtonLoginBackHome = styled.button`
   align-items: center;
   border: none;
   :hover{
-    background: #9933FF;
+    background: #5D1049;
   }
 `
 
@@ -126,7 +127,7 @@ export const ButtonAply = styled.button`
   border: none;
   margin: auto;
   :hover {
-    background: #9933FF;
+    background: #5D1049;
   }
 
 `
@@ -152,16 +153,21 @@ export const RocketImgHome = styled.img`
 `
 
 export const MainHome = styled.main`
-  width: 600px;
+  width: 400px;
   height: 100vh;
-  padding-top: 200px;
-  margin: 0 auto;
+  margin-top: 200px;
+  margin: auto;
   text-align: center;
 `
 
 export const CardsTrips = styled.div`
-  border: 2px solid #999999;
+  border: 2px solid #5D1049;
   border-radius: 8px;
   padding: 25px;
   margin-bottom: 16px;
+`
+
+export const TitleHome = styled.h2`
+  margin-top: 180px;
+  text-align: center;
 `

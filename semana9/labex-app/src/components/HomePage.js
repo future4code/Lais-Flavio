@@ -2,7 +2,7 @@ import React, {useState, useEffect}  from 'react'
 import { useHistory } from 'react-router-dom'
 import Imagem from './download.png'
 import {DivLoginDad, H1, Nav, Ul, Li, HeaderHomePage, Paragraph, 
-RocketImgHome, MainHome, CardsTrips, ButtonAply} from './styles'
+RocketImgHome, MainHome, CardsTrips, ButtonAply, TitleHome} from './styles'
 import axios from 'axios'
 
 
@@ -32,13 +32,17 @@ useEffect(() => {
     history.push("/login")
   } 
 
+  const goToFormPage = () => {
+    history.push("/form")
+  }
+
   const mapTrips = allTrips.map(trip => {
     return <CardsTrips>
       <h3>{trip.name}</h3>
       <p><strong>Description : </strong> {trip.description}</p>
       <h4>Where are we going? : {trip.planet}</h4>
       <p>how many days? : {trip.durationInDays}</p>
-      <p>When?: {trip.date}</p>
+      <p>When? : {trip.date}</p>
       <ButtonAply>Apply</ButtonAply>
       </CardsTrips>   
   })
@@ -54,8 +58,10 @@ useEffect(() => {
         </Ul>
       </Nav>
       </HeaderHomePage>
+      <div>
+      <TitleHome>Available trips!</TitleHome>
+      </div>
       <MainHome>
-        <h2>Available trips!</h2>
           {mapTrips}
       </MainHome>
     </DivLoginDad>
