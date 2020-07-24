@@ -22,14 +22,14 @@ const HomePage = () => {
   return (
     <DivHomeDad>
       <H1Home>Labex</H1Home>
-      <CardsTripsHome onClick={goToLoginPage}>
-        <h2>Login</h2>
-        <ImgLogin src={LoginImg} alt="" />
-      </CardsTripsHome>
       <CardsTripsHome onClick={goToListTripsPage}>
         <h2>View available trips</h2>
         <ImgLogin src={TripImg} alt="" />
       </CardsTripsHome>
+      <CardsTripsHome onClick={goToLoginPage}>
+        <h2>Login</h2>
+        <ImgLogin src={LoginImg} alt="" />
+      </CardsTripsHome> 
     </DivHomeDad>
   )
 }

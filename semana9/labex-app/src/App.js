@@ -8,6 +8,8 @@ import TripDetailsPage from './components/TripDetailsPage'
 import LoginPage from './components/LoginPage'
 import './App.css';
 import AplicationFormPage from './components/AplicationFormPage';
+import CreateAccountPage from './components/CreateAccountPage';
+import HomePageAdm from './components/HomePageAdm';
 
 function App (){
   return (
@@ -33,6 +35,12 @@ function App (){
         </Route>
         <Route exact path="/">
           <HomePage />
+        </Route>
+        <Route exact path="/admHomePage">
+          <HomePageAdm />
+        </Route>
+        <Route exact path="/createAccount">
+          <CreateAccountPage />
         </Route>
       </Switch>
     </BrowserRouter>

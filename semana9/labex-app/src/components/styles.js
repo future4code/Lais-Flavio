@@ -79,6 +79,12 @@ export const DivLogin = styled.div`
   justify-content: center;
   margin-top: 12%;
 `
+export const DivCreateForm = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+`
+
 export const DivLoginAplication = styled.div`
   display: flex;
   justify-content: center;
@@ -121,6 +127,17 @@ export const DivFormLogin = styled.div`
   border: 2px solid #5D1049;
   padding: 16px;
 `
+export const DivFormCreateTrips = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: #FFF;
+  color: #1A1A1A;
+  max-width: 600px;
+  border: 2px solid #5D1049;
+  padding: 16px;
+  margin: 0;
+`
+
 export const DivButtonLogin = styled.div`
   margin-top: 60px;
   display: flex;
@@ -199,6 +216,7 @@ export const Select = styled.select`
   padding: 16px 0;
   color: #999999;
   border: none;
+  outline: none;
 `
 
 export const RocketImg = styled.img`

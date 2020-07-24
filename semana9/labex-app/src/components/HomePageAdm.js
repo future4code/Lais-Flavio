@@ -6,7 +6,7 @@ RocketImgHome, MainHome, CardsTrips, ButtonAply, TitleHome} from './styles'
 import axios from 'axios'
 
 
-const ListTripsPage = () => {
+const HomePageAdm = () => {
 
   const [allTrips, setAllTrips] = useState([])
   
@@ -28,23 +28,23 @@ useEffect(() => {
 
   const history = useHistory()
 
-  const goToLoginPage = () => {
-    history.push("/login")
-  } 
-
 
   const goToAplicationFormPage = () => {
-    history.push("/formPage")
+    history.push("/detailsTrip")
+  }
+
+  const goToCreateTripPage = () => {
+    history.push("/createTrips")
   }
 
   const mapTrips = allTrips.map(trip => {
-    return <CardsTrips key={trip.id}>
+    return <CardsTrips>
       <h3>{trip.name}</h3>
       <p><strong>Description : </strong> {trip.description}</p>
       <h4>Where are we going? : {trip.planet}</h4>
       <p>how many days? : {trip.durationInDays}</p>
       <p>When? : {trip.date}</p>
-      <ButtonAply onClick={() => goToAplicationFormPage(trip.id)}>Apply</ButtonAply>
+      <ButtonAply onClick={goToAplicationFormPage}>See details</ButtonAply>
       </CardsTrips>   
   })
 
@@ -55,7 +55,7 @@ useEffect(() => {
       <H1>Labex <RocketImgHome src={Imagem} alt="rocket"/><br></br><Paragraph>"Find the best space travel!"</Paragraph></H1>
       <Nav>
         <Ul>
-          <Li onClick={goToLoginPage}>Login</Li>
+          <Li onClick={goToCreateTripPage}>Create Trip</Li>
         </Ul>
       </Nav>
       </HeaderHomePage>
@@ -69,4 +69,4 @@ useEffect(() => {
   )
 }
 
-export default ListTripsPage
+export default HomePageAdm
