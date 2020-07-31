@@ -8,10 +8,10 @@ const GlobalStyle = createGlobalStyle`
     outline: 0;
   }
   body {
-    background: #0C0C1E;
+    background: #F3FFED;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
-    font-family: lato;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .App {
@@ -21,12 +21,13 @@ const GlobalStyle = createGlobalStyle`
   .menu {
     width: 250px;
     height: 100vh;
-    background: #74112F;
+    background: #8DA381;
     color: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 24px;
+    font-weight: bold;
     label {
       font-size: 14px;
       font-weight: 300;
@@ -38,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
       outline: 0;
       border: none;
       height: 32px;
-      border-radius: 16px;
+      border-radius: 8px;
       padding: 8px;
       background: #FFF;
 
@@ -48,9 +49,9 @@ const GlobalStyle = createGlobalStyle`
       width: 200px;
       border: none;
       height: 32px;
-      border-radius: 16px;
+      border-radius: 8px;
       padding: 8px;
-      background:#FFF;
+      background: #F3FFED;
     }
 
     option {
@@ -59,7 +60,7 @@ const GlobalStyle = createGlobalStyle`
 
     }
 
-    textarea {
+    input {
       width: 200px;
       border-radius: 8px;
       resize: none;
@@ -73,7 +74,7 @@ const GlobalStyle = createGlobalStyle`
       bottom: 0;
       font-size: 16px;
       padding-bottom: 16px;
-      font-family: lato;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     button {
@@ -81,11 +82,12 @@ const GlobalStyle = createGlobalStyle`
       border-radius: 8px;
       width: 190px;
       height: 35px;
-      background: #0C0C1E;
+      background: #08313A;
       color: #FFF;
       margin-top: 25px;
+      font-size: 16px;
       :hover {
-        background: #071330;
+        filter: brightness(1.2);
       }
     }
   }
@@ -93,7 +95,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
@@ -102,15 +104,49 @@ const GlobalStyle = createGlobalStyle`
       height: 300px;
       text-align: center;
       margin: 25px auto;
-      background: #FFFBFB;
+      background: #8DA381;
+      color: #FFF;
+      border-radius: 8px;
     }
-    .box:hover{
-	    filter: brightness(1.2);
-    }
+
     h3{
       margin-top: 10px;
       font-size: 16px;
-      color: black;
+      color: #FFF;
+      font-weight: 700;
+    }
+    .task-card {
+      margin: 0 auto;
+      width: 230px;
+      height: 50px;
+      margin: 16px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 14px;
+      p {
+        margin-top: 16px;
+        margin-left: 4px;
+      }
+
+     .btn-imagens {
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-end;
+     }
+
+      img {
+        border: none;
+        border-radius: 4px;
+        margin: 12px 8px;
+        padding: 4px;
+        width: 50px;
+        height: 28px;
+        :hover{
+          border: 1px solid;
+          background: #08313A;
+        }
+      }
     }
   }
 `
