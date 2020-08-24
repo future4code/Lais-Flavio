@@ -28,7 +28,7 @@ console.log(obterEstatisticas([1, 2, 3, 4, 5]))
 Resposta:
 Saída: {maior: 5, menor: 1, media: 3}
 
-function obterEstatisticas(numeros: number[] = [1, 2, 3, 4, 5]) {
+function obterEstatisticas(numeros: number[]) {
 
     const numerosOrdenados= numeros.sort(
         (a, b) => a - b
@@ -48,6 +48,7 @@ function obterEstatisticas(numeros: number[] = [1, 2, 3, 4, 5]) {
 
     return estatisticas
 }
+console.log(obterEstatisticas([1, 2, 3, 4, 5]))
 
 */
 /* B)

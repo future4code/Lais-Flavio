@@ -62,7 +62,7 @@ const posts: postsInfos[] = [
     }
   ]
 
-  function buscarPostsPorAutor(posts: postsInfos[], autorInformado: string): any {
+  function buscarPostsPorAutor(posts: postsInfos[], autorInformado?: string):post[] {
     return posts.filter(
       (post) => {
         return post.autor === autorInformado
