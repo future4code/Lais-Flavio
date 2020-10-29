@@ -1,0 +1,14 @@
+{
+  "name": "semana21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercicios-dados.js",
+  "scripts": {
+    "start": "tsc && node ./build/exercicios-dados.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
